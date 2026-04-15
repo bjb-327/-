@@ -1,0 +1,262 @@
+/* ==================== index.css 首页特有样式 ==================== */
+
+/* ==================== 1. Banner轮播图 ==================== */
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+}
+
+.banner .wrapper {
+    position: relative;
+    height: 500px;
+}
+
+.banner img {
+    width: 1240px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* 左侧分类导航 */
+.banner .aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px 0;
+}
+
+.banner .aside li {
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+.banner .aside li:hover {
+    background-color: #27ba9b;
+    padding-left: 25px;
+}
+
+.banner .aside a {
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .aside span {
+    font-size: 14px;
+    color: #999;
+}
+
+/* 左右箭头 */
+.banner .prev,
+.banner .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.banner .prev {
+    left: 260px;
+}
+
+.banner .next {
+    right: 10px;
+}
+
+.banner .prev:hover,
+.banner .next:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* 底部圆点 */
+.banner ol {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.banner ol li {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.banner ol li.current {
+    background-color: #fff;
+    width: 30px;
+    border-radius: 5px;
+}
+
+/* ==================== 2. 新鲜好物 ==================== */
+.goods {
+    margin-top: 50px;
+}
+
+.goods .hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.goods .hd h2 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.goods .hd span {
+    font-size: 16px;
+    color: #999;
+    margin-left: 20px;
+}
+
+.goods .hd .more {
+    font-size: 14px;
+    color: #999;
+}
+
+.goods .hd .more:hover {
+    color: #27ba9b;
+}
+
+.goods .bd li {
+    float: left;
+    width: 304px;
+    height: 380px;
+    background-color: #f0f9f4;
+    margin-right: 8px;
+    transition: all 0.3s;
+}
+
+.goods .bd li:last-child {
+    margin-right: 0;
+}
+
+.goods .bd li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.goods .bd img {
+    width: 304px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.goods .bd .txt {
+    padding: 20px;
+    text-align: center;
+}
+
+.goods .bd h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.goods .bd p {
+    font-size: 16px;
+    color: #9a2e1f;
+}
+
+.goods .bd span {
+    font-size: 22px;
+}
+
+/* ==================== 3. 人气推荐 ==================== */
+.recommend {
+    margin-top: 50px;
+}
+
+.recommend .hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.recommend .hd h2 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.recommend .hd span {
+    font-size: 16px;
+    color: #999;
+    margin-left: 20px;
+}
+
+.recommend .hd .more {
+    font-size: 14px;
+    color: #999;
+}
+
+.recommend .bd li {
+    float: left;
+    width: 304px;
+    height: 380px;
+    background-color: #fff;
+    margin-right: 8px;
+    transition: all 0.3s;
+}
+
+.recommend .bd li:last-child {
+    margin-right: 0;
+}
+
+.recommend .bd li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.recommend .bd img {
+    width: 304px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.recommend .bd .txt {
+    padding: 20px;
+    text-align: center;
+}
+
+.recommend .bd h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.recommend .bd p {
+    font-size: 14px;
+    color: #999;
+}

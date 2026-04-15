@@ -1,0 +1,260 @@
+/* ==================== common.css 公共样式（头部和底部）==================== */
+
+/* ==================== 1. 快捷导航栏（顶部黑色条） ==================== */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper ul {
+    float: right;
+}
+
+.shortcut .wrapper li {
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut .wrapper li a {
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.shortcut .wrapper li:last-child a {
+    border-right: 0;
+}
+
+.shortcut .wrapper li:first-child a {
+    color: #5EB69C;
+}
+
+/* ==================== 2. 头部区域 ==================== */
+.header {
+    height: 130px;
+    padding-top: 30px;
+}
+
+/* Logo - 已修改为 LOGO.PNG */
+.logo {
+    float: left;
+    width: 200px;
+    height: 70px;
+    margin-right: 40px;
+}
+
+.logo a {
+    display: block;
+    width: 200px;
+    height: 70px;
+    background: url(../images/LOGO.PNG) no-repeat;  /* 修改：LOGO.PNG */
+    background-size: contain;
+    font-size: 0;
+}
+
+/* 主导航 */
+.nav {
+    float: left;
+    height: 70px;
+}
+
+.nav ul {
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 48px;
+}
+
+.nav a {
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 7px;
+}
+
+.nav a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+/* 搜索框 - 已修改为 精灵图.PNG */
+.search {
+    float: left;
+    width: 172px;
+    height: 30px;
+    margin-top: 24px;
+    margin-left: 34px;
+    position: relative;
+}
+
+.search input {
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.search::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/精灵图.PNG) -80px -70px;  /* 修改：精灵图.PNG */
+}
+
+/* 购物车 - 已修改为 精灵图.PNG */
+.cart {
+    float: left;
+    width: 23px;
+    height: 23px;
+    margin-top: 28px;
+    margin-left: 15px;
+    background: url(../images/精灵图.PNG) -120px -70px;  /* 修改：精灵图.PNG */
+    position: relative;
+}
+
+.cart span {
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+
+/* ==================== 3. 底部版权区域 ==================== */
+.footer {
+    margin-top: 40px;
+}
+
+/* 服务承诺 - 已修改为 精灵图.PNG */
+.footer .service {
+    height: 174px;
+    background-color: #333;
+    padding: 0 70px;
+}
+
+.footer .service ul {
+    height: 174px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .service li {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 28px;
+}
+
+.footer .service li::before {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    margin-right: 19px;
+    background: url(../images/精灵图.PNG) 0 0;  /* 修改：精灵图.PNG */
+}
+
+.footer .service li:nth-child(2)::before {
+    background-position: -130px 0;
+}
+
+.footer .service li:nth-child(3)::before {
+    background-position: -65px 0;
+}
+
+/* 帮助中心 */
+.footer .help {
+    height: 300px;
+    background-color: #f5f5f5;
+    padding-top: 60px;
+}
+
+.footer .help .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .help .left {
+    display: flex;
+}
+
+.footer .help dl {
+    margin-right: 100px;
+}
+
+.footer .help dt {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer .help dd {
+    margin-bottom: 10px;
+}
+
+.footer .help dd a {
+    font-size: 14px;
+    color: #999;
+}
+
+.footer .help dd a:hover {
+    color: #27ba9b;
+}
+
+.footer .help .right ul {
+    display: flex;
+}
+
+.footer .help .right li {
+    margin-left: 40px;
+    text-align: center;
+}
+
+.footer .help .right img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.footer .help .right p {
+    font-size: 14px;
+    color: #999;
+}
+
+/* 版权信息 */
+.footer .copyright {
+    height: 168px;
+    background-color: #333;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.footer .copyright p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.footer .copyright a {
+    color: #999;
+    margin: 0 10px;
+}
+
+.footer .copyright a:hover {
+    color: #27ba9b;
+}

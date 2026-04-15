@@ -1,0 +1,70 @@
+/* ==================== base.css 基础重置样式 ==================== */
+
+/* 1. 清除所有元素的内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. 设置网页整体样式 */
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 3. 清除列表默认样式 */
+ul, ol {
+    list-style: none;
+}
+
+/* 4. 清除链接默认样式 */
+a {
+    text-decoration: none;
+    color: #333;
+    outline: none;
+}
+
+/* 5. 鼠标悬停显示下划线 */
+a:hover {
+    text-decoration: underline;
+}
+
+/* 6. 设置图片默认样式 */
+img {
+    vertical-align: middle;
+    border: 0;
+    max-width: 100%;
+}
+
+/* 7. 清除输入框默认样式 */
+input, button {
+    outline: none;
+    border: none;
+}
+
+/* 8. 设置版心样式（页面内容居中容器） */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 9. 清除浮动 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/* 10. 左浮动和右浮动工具类 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
